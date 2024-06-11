@@ -47,6 +47,14 @@ class Ftract(medirect.MEDirect):
             type=int,
             help='Minimum sequence length to parse feature')
         parser.add_argument(
+            '-min-length-change', '--min-length-change',
+            type=int,
+            help='Second parameter for the minimum sequence length to parse feature')
+        parser.add_argument(
+            '-min-length', '--min-length',
+            type="int",
+            help='this should lead into the issue')
+        parser.add_argument(
             '-on-error', '--on-error',
             choices=['halt', 'continue'],
             default='continue',
